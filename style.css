@@ -76,6 +76,28 @@ h2{
     text-align: center;
 }
 
-ul{
+li{
     text-align: center ;
+    margin: 0 0 100px 0;
+}
+
+#bottomNav{
+    height:60px;
+    background-color: #00bcd4;
+    position:fixed;
+    width:100%;
+    bottom:0;
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+#technicalSkills{
+    width:50%;
+    position: absolute;
+    left:450px;
 }

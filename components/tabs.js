@@ -1,6 +1,10 @@
 import React from 'react';
 import {Tabs, Tab} from 'material-ui/Tabs';
-import Paper from 'material-ui/Paper';
+import GridListExampleSimple from './GridListExampleSimple';
+import CardExampleWithAvatar from './CardExampleWithAvatar';
+import BackEndCard from './BackEndCard'
+import DataAnalysisCard from './DataAnalysisCard'
+import ListExamplePhone from './DividerExampleForm'
 
 const styles = {
     headline: {
@@ -15,38 +19,39 @@ function handleActive(tab) {
     alert(`A tab with this route property ${tab.props['data-route']} was activated.`);
 }
 
+const technicalSkills = 'technicalSkills';
+
 const TabsExampleSimple = () => (
     <Tabs>
         <Tab label="Projects" >
             <div>
                 <h2 style={styles.headline}>Projects</h2>
-                <ul>
-                    <li>
-                        <a href="https://github.com/nikhilrampal15/q3project"> A housing recommendation engine using k-means clustering.</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/nikhilrampal15/q2project"> Job Chaser</a> a web portal to finding your next career
-                    </li>
-                    <li>
-                        <a href="https://github.com/nikhilrampal15/q1project"> Let's Cook </a> just input whatever is in your fridge.
-                    </li>
-                </ul>
+                <GridListExampleSimple />
             </div>
         </Tab>
-        <Tab label="Activities" >
-            <div>
-                <h2 style={styles.headline}>Tab Two</h2>
-                <p>
-                    This is another example tab.
-                </p>
+        <Tab label="Technical Skills" >
+            <div id="technicalSkills">
+                <br />
+                <CardExampleWithAvatar  />
+                <br />
+                <br />
+                <BackEndCard />
+                <br />
+                <br />
+                <DataAnalysisCard />
+                <br />
+                <br />
+                <br />
+                <br />
             </div>
         </Tab>
         <Tab label="Resume" >
             <div>
-                <h2 style={styles.headline}>Tab Two</h2>
-                <p>
-                    This is another example tab.
-                </p>
+                <ListExamplePhone />
+                <br />
+                <br />
+                <br />
+                <br />
             </div>
         </Tab>
         <Tab

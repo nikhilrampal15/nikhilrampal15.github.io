@@ -4,11 +4,11 @@ import IconButton from 'material-ui/IconButton';
 import IconMenu from 'material-ui/IconMenu';
 import MenuItem from 'material-ui/MenuItem';
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
-import ActionHome from 'material-ui/svg-icons/action/home';
+
 
 const AppBarExampleIconMenu = () => (
     <AppBar
-        title="Nikhil Rampal Software Engineer"
+        title="Nik Rampal"
         iconElementLeft={
         <IconButton iconClassName="muidocs-icon-custom-github" tooltip="GitHub"/> 
         }
