@@ -6,6 +6,7 @@ import BackEndCard from './BackEndCard'
 import DataAnalysisCard from './DataAnalysisCard'
 import ListExamplePhone from './DividerExampleForm'
 
+
 const styles = {
     headline: {
         fontSize: 24,
@@ -14,12 +15,6 @@ const styles = {
         fontWeight: 400
     }
 };
-
-function handleActive(tab) {
-    alert(`A tab with this route property ${tab.props['data-route']} was activated.`);
-}
-
-const technicalSkills = 'technicalSkills';
 
 const TabsExampleSimple = () => (
     <Tabs>
@@ -45,25 +40,13 @@ const TabsExampleSimple = () => (
                 <br />
             </div>
         </Tab>
-        <Tab label="Resume" >
-            <div>
+        <Tab label="Resume">
+            <div id ="Resume">
                 <ListExamplePhone />
                 <br />
                 <br />
                 <br />
                 <br />
-            </div>
-        </Tab>
-        <Tab
-            label="onActive"
-            data-route="/home"
-            onActive={handleActive}
-        >
-            <div>
-                <h2 style={styles.headline}>Tab Three</h2>
-                <p>
-                    This is a third example tab.
-                </p>
             </div>
         </Tab>
     </Tabs>

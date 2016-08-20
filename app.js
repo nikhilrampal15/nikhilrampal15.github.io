@@ -5,9 +5,7 @@ import AppBarExampleIconMenu from './components/navbar';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import TabsExampleSimple from './components/tabs'
 
-
-
- injectTapEventPlugin();
+injectTapEventPlugin();
 
 const App = () => (
     <MuiThemeProvider>

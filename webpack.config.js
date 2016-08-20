@@ -16,6 +16,11 @@ var config = {
                 test : /\.jsx?/,
                 include : APP_DIR,
                 loader : 'babel'
+            },
+            {
+                test: /\.css$/,
+                loader: 'style!css?modules',
+                include: /flexboxgrid/
             }
         ]
     }
