@@ -56374,19 +56374,19 @@
 	                    _react2.default.createElement(
 	                        _reactBootstrap.Carousel.Item,
 	                        null,
-	                        _react2.default.createElement('img', { width: 900, height: 500, src: './components/images/JobChaser.png' }),
+	                        _react2.default.createElement('img', { width: 900, height: 500, src: './components/JobChaser.png' }),
 	                        _react2.default.createElement(_reactBootstrap.Carousel.Caption, { id: 'JobChaser' })
 	                    ),
 	                    _react2.default.createElement(
 	                        _reactBootstrap.Carousel.Item,
 	                        null,
-	                        _react2.default.createElement('img', { width: 900, height: 500, src: './components/images/LetsCook.png' }),
+	                        _react2.default.createElement('img', { width: 900, height: 500, src: './components/LetsCook.png' }),
 	                        _react2.default.createElement(_reactBootstrap.Carousel.Caption, { id: 'LetsCook' })
 	                    ),
 	                    _react2.default.createElement(
 	                        _reactBootstrap.Carousel.Item,
 	                        null,
-	                        _react2.default.createElement('img', { width: 900, height: 500, src: './components/images/VirtualRealtor.png' }),
+	                        _react2.default.createElement('img', { width: 900, height: 500, src: './components/VirtualRealtor.png' }),
 	                        _react2.default.createElement(_reactBootstrap.Carousel.Caption, { id: 'VirtualRealtor' })
 	                    )
 	                )

@@ -8,18 +8,18 @@ const CarouselInstance = () => (
             <Col md={8} mdOffset ={2}>
                 <Carousel indicators ={false}>
                     <Carousel.Item>
-                        <img width={900} height={500} src="./components/Images/JobChaser.png"/>
+                        <img width={900} height={500} src="./components/JobChaser.png"/>
                         <Carousel.Caption id="JobChaser">
                         </Carousel.Caption>
                     </Carousel.Item>
 
                     <Carousel.Item>
-                        <img width={900} height={500}  src="./components/Images/LetsCook.png"/>
+                        <img width={900} height={500}  src="./components/LetsCook.png"/>
                         <Carousel.Caption id="LetsCook">
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img width={900} height={500}  src="./components/Images/VirtualRealtor.png"/>
+                        <img width={900} height={500}  src="./components/VirtualRealtor.png"/>
                         <Carousel.Caption id="VirtualRealtor">
                         </Carousel.Caption>
                     </Carousel.Item>
