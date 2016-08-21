@@ -7,6 +7,7 @@ const AppBarExampleIconMenu = () => (
     <AppBar
         style={{backgroundColor : '#737373'}}
         title="Nick Rampal"
+        showMenuIconButton ={false}
         iconElementRight={
       <SvgIconExampleSimple />
     }

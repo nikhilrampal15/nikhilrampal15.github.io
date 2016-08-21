@@ -8,13 +8,13 @@ const CarouselInstance = () => (
             <Col md={8} mdOffset ={2}>
                 <Carousel indicators ={false}>
                     <Carousel.Item>
-                        <img width={900} height={500} src="./components/JobChaser.png"/>
+                        <a href="https://q2project.herokuapp.com/"><img width={900} height={500} src="./components/JobChaser.png"/></a>
                         <Carousel.Caption id="JobChaser">
                         </Carousel.Caption>
                     </Carousel.Item>
 
                     <Carousel.Item>
-                        <img width={900} height={500}  src="./components/LetsCook.png"/>
+                        <a href="http://q1project.herokuapp.com/"><img width={900} height={500}  src="./components/LetsCook.png"/></a>
                         <Carousel.Caption id="LetsCook">
                         </Carousel.Caption>
                     </Carousel.Item>

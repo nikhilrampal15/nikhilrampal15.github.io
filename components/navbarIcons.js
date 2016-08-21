@@ -1,12 +1,12 @@
 import React from 'react';
 import SvgIcon from 'material-ui/SvgIcon';
 
-const iconStyles = {
-    position:"relative",
-    right: 100,
-    top:5,
-    margin:5
-};
+// const iconStyles = {
+//     position:"relative",
+//     right: 100,
+//     top:5,
+//     margin:5
+// };
 
 const HomeIcon = (props) => (
     <a href ="https://www.linkedin.com/in/nick-rampal">
@@ -29,8 +29,8 @@ const HomeIcon2 = (props) => (
 
 const SvgIconExampleSimple = () => (
     <div>
-        <HomeIcon style={iconStyles} />
-        <HomeIcon2 style={iconStyles} />
+        <HomeIcon  />
+        <HomeIcon2 />
     </div>
 );
 

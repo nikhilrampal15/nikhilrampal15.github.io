@@ -28512,6 +28512,7 @@
 	    return _react2.default.createElement(_AppBar2.default, {
 	        style: { backgroundColor: '#737373' },
 	        title: 'Nick Rampal',
+	        showMenuIconButton: false,
 	        iconElementRight: _react2.default.createElement(_navbarIcons2.default, null)
 	    });
 	};
@@ -32886,12 +32887,12 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var iconStyles = {
-	    position: "relative",
-	    right: 100,
-	    top: 5,
-	    margin: 5
-	};
+	// const iconStyles = {
+	//     position:"relative",
+	//     right: 100,
+	//     top:5,
+	//     margin:5
+	// };
 
 	var HomeIcon = function HomeIcon(props) {
 	    return _react2.default.createElement(
@@ -32921,8 +32922,8 @@
 	    return _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(HomeIcon, { style: iconStyles }),
-	        _react2.default.createElement(HomeIcon2, { style: iconStyles })
+	        _react2.default.createElement(HomeIcon, null),
+	        _react2.default.createElement(HomeIcon2, null)
 	    );
 	};
 
@@ -33287,7 +33288,7 @@
 
 	var _DataAnalysisCard2 = _interopRequireDefault(_DataAnalysisCard);
 
-	var _ContactCard = __webpack_require__(675);
+	var _ContactCard = __webpack_require__(656);
 
 	var _ContactCard2 = _interopRequireDefault(_ContactCard);
 
@@ -54593,7 +54594,125 @@
 	exports.default = DataAnalysisCard;
 
 /***/ },
-/* 656 */,
+/* 656 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _mobileTearSheet = __webpack_require__(657);
+
+	var _mobileTearSheet2 = _interopRequireDefault(_mobileTearSheet);
+
+	var _List = __webpack_require__(658);
+
+	var _Divider = __webpack_require__(667);
+
+	var _Divider2 = _interopRequireDefault(_Divider);
+
+	var _call = __webpack_require__(669);
+
+	var _call2 = _interopRequireDefault(_call);
+
+	var _chatBubble = __webpack_require__(670);
+
+	var _chatBubble2 = _interopRequireDefault(_chatBubble);
+
+	var _colors = __webpack_require__(292);
+
+	var _email = __webpack_require__(671);
+
+	var _email2 = _interopRequireDefault(_email);
+
+	var _work = __webpack_require__(672);
+
+	var _work2 = _interopRequireDefault(_work);
+
+	var _info = __webpack_require__(673);
+
+	var _info2 = _interopRequireDefault(_info);
+
+	var _Avatar = __webpack_require__(395);
+
+	var _Avatar2 = _interopRequireDefault(_Avatar);
+
+	var _reactBootstrap = __webpack_require__(401);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var ContactCard = function ContactCard() {
+	    return _react2.default.createElement(
+	        _reactBootstrap.Grid,
+	        null,
+	        _react2.default.createElement(
+	            _reactBootstrap.Row,
+	            { className: 'show-grid' },
+	            _react2.default.createElement(
+	                _reactBootstrap.Col,
+	                { xs: 8, xsOffset: 1, md: 8, mdOffset: 2, sm: 10, smOffset: 2 },
+	                _react2.default.createElement(
+	                    _mobileTearSheet2.default,
+	                    null,
+	                    _react2.default.createElement(
+	                        _List.List,
+	                        null,
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: 'tel:415-742-1573' },
+	                            _react2.default.createElement(_List.ListItem, {
+	                                leftIcon: _react2.default.createElement(_call2.default, { color: _colors.indigo500 }),
+	                                rightIcon: _react2.default.createElement(_chatBubble2.default, null),
+	                                primaryText: '(415) 742-1573',
+	                                secondaryText: 'Mobile'
+	                            })
+	                        )
+	                    ),
+	                    _react2.default.createElement(_Divider2.default, { inset: true }),
+	                    _react2.default.createElement(
+	                        _List.List,
+	                        null,
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: 'mailto:nick.k.rampal@gmail.com?', target: '_top' },
+	                            _react2.default.createElement(_List.ListItem, {
+	                                leftIcon: _react2.default.createElement(_email2.default, { color: _colors.indigo500 }),
+	                                style: { fontSize: 14 },
+	                                primaryText: 'nick.k.rampal@gmail.com',
+	                                secondaryText: 'Personal'
+	                            })
+	                        )
+	                    ),
+	                    _react2.default.createElement(_Divider2.default, { inset: true }),
+	                    _react2.default.createElement(
+	                        _List.List,
+	                        null,
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: 'https://docs.google.com/document/d/1KQuvL_uIrv5POaL6NrNJBXOLr3zlmdPUIUq8g5d9Lv4/edit?usp=sharing' },
+	                            _react2.default.createElement(_List.ListItem, {
+	                                leftIcon: _react2.default.createElement(_work2.default, { color: _colors.indigo500 }),
+	                                rightIcon: _react2.default.createElement(_info2.default, null),
+	                                primaryText: 'Resume',
+	                                secondaryText: 'NickRampalResume.pdf'
+	                            })
+	                        )
+	                    )
+	                )
+	            )
+	        )
+	    );
+	};
+
+	exports.default = ContactCard;
+
+/***/ },
 /* 657 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -56374,13 +56493,21 @@
 	                    _react2.default.createElement(
 	                        _reactBootstrap.Carousel.Item,
 	                        null,
-	                        _react2.default.createElement('img', { width: 900, height: 500, src: './components/JobChaser.png' }),
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: 'https://q2project.herokuapp.com/' },
+	                            _react2.default.createElement('img', { width: 900, height: 500, src: './components/JobChaser.png' })
+	                        ),
 	                        _react2.default.createElement(_reactBootstrap.Carousel.Caption, { id: 'JobChaser' })
 	                    ),
 	                    _react2.default.createElement(
 	                        _reactBootstrap.Carousel.Item,
 	                        null,
-	                        _react2.default.createElement('img', { width: 900, height: 500, src: './components/LetsCook.png' }),
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: 'http://q1project.herokuapp.com/' },
+	                            _react2.default.createElement('img', { width: 900, height: 500, src: './components/LetsCook.png' })
+	                        ),
 	                        _react2.default.createElement(_reactBootstrap.Carousel.Caption, { id: 'LetsCook' })
 	                    ),
 	                    _react2.default.createElement(
@@ -56396,124 +56523,6 @@
 	};
 
 	exports.default = CarouselInstance;
-
-/***/ },
-/* 675 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _mobileTearSheet = __webpack_require__(657);
-
-	var _mobileTearSheet2 = _interopRequireDefault(_mobileTearSheet);
-
-	var _List = __webpack_require__(658);
-
-	var _Divider = __webpack_require__(667);
-
-	var _Divider2 = _interopRequireDefault(_Divider);
-
-	var _call = __webpack_require__(669);
-
-	var _call2 = _interopRequireDefault(_call);
-
-	var _chatBubble = __webpack_require__(670);
-
-	var _chatBubble2 = _interopRequireDefault(_chatBubble);
-
-	var _colors = __webpack_require__(292);
-
-	var _email = __webpack_require__(671);
-
-	var _email2 = _interopRequireDefault(_email);
-
-	var _work = __webpack_require__(672);
-
-	var _work2 = _interopRequireDefault(_work);
-
-	var _info = __webpack_require__(673);
-
-	var _info2 = _interopRequireDefault(_info);
-
-	var _Avatar = __webpack_require__(395);
-
-	var _Avatar2 = _interopRequireDefault(_Avatar);
-
-	var _reactBootstrap = __webpack_require__(401);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var ContactCard = function ContactCard() {
-	    return _react2.default.createElement(
-	        _reactBootstrap.Grid,
-	        null,
-	        _react2.default.createElement(
-	            _reactBootstrap.Row,
-	            { className: 'show-grid' },
-	            _react2.default.createElement(
-	                _reactBootstrap.Col,
-	                { xs: 8, xsOffset: 2, md: 8, mdOffset: 2, sm: 10, smOffset: 2 },
-	                _react2.default.createElement(
-	                    _mobileTearSheet2.default,
-	                    null,
-	                    _react2.default.createElement(
-	                        _List.List,
-	                        null,
-	                        _react2.default.createElement(
-	                            'a',
-	                            { href: 'tel:415-742-1573' },
-	                            _react2.default.createElement(_List.ListItem, {
-	                                leftIcon: _react2.default.createElement(_call2.default, { color: _colors.indigo500 }),
-	                                rightIcon: _react2.default.createElement(_chatBubble2.default, null),
-	                                primaryText: '(415) 742-1573',
-	                                secondaryText: 'Mobile'
-	                            })
-	                        )
-	                    ),
-	                    _react2.default.createElement(_Divider2.default, { inset: true }),
-	                    _react2.default.createElement(
-	                        _List.List,
-	                        null,
-	                        _react2.default.createElement(
-	                            'a',
-	                            { href: 'mailto:nick.k.rampal@gmail.com?', target: '_top' },
-	                            _react2.default.createElement(_List.ListItem, {
-	                                leftIcon: _react2.default.createElement(_email2.default, { color: _colors.indigo500 }),
-	                                primaryText: 'nick.k.rampal@gmail.com',
-	                                secondaryText: 'Personal'
-	                            })
-	                        )
-	                    ),
-	                    _react2.default.createElement(_Divider2.default, { inset: true }),
-	                    _react2.default.createElement(
-	                        _List.List,
-	                        null,
-	                        _react2.default.createElement(
-	                            'a',
-	                            { href: 'https://docs.google.com/document/d/1KQuvL_uIrv5POaL6NrNJBXOLr3zlmdPUIUq8g5d9Lv4/edit?usp=sharing' },
-	                            _react2.default.createElement(_List.ListItem, {
-	                                leftIcon: _react2.default.createElement(_work2.default, { color: _colors.indigo500 }),
-	                                rightIcon: _react2.default.createElement(_info2.default, null),
-	                                primaryText: 'Resume',
-	                                secondaryText: 'NickRampalResume.pdf'
-	                            })
-	                        )
-	                    )
-	                )
-	            )
-	        )
-	    );
-	};
-
-	exports.default = ContactCard;
 
 /***/ }
 /******/ ]);

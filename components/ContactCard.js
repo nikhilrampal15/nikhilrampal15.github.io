@@ -14,7 +14,7 @@ import {Grid,Row,Col} from 'react-bootstrap';
 const ContactCard = () => (
     <Grid>
         <Row className="show-grid">
-            <Col xs={8} xsOffset ={2} md ={8} mdOffset={2} sm ={10} smOffset={2}>
+            <Col xs={8} xsOffset ={1} md ={8} mdOffset={2} sm ={10} smOffset={2}>
                 <MobileTearSheet>
                     <List>
                         <a href="tel:415-742-1573">
@@ -31,6 +31,7 @@ const ContactCard = () => (
                         <a href="mailto:nick.k.rampal@gmail.com?" target="_top">
                             <ListItem
                                 leftIcon={<CommunicationEmail color={indigo500} />}
+                                style={{fontSize:14}}
                                 primaryText="nick.k.rampal@gmail.com"
                                 secondaryText="Personal"
                             />
