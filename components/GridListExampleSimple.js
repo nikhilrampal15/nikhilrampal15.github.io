@@ -45,7 +45,6 @@ const GridListExampleSimple = () => (
                 <GridTile
                     key={tile.img}
                     title={tile.title}
-                    subtitle={<span>by <b>{tile.description}</b></span>}
                     actionIcon={<IconButton><StarBorder color="white" /></IconButton>}
                 >
                     <img src={tile.img} />

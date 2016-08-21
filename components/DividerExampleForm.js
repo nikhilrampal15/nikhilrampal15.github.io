@@ -17,7 +17,7 @@ const ListExamplePhone = () => (
             <Col xs={8} xsOffset ={2} md ={8} mdOffset={2} sm ={10} smOffset={2}>
     <MobileTearSheet>
         <List>
-            <a href="415-742-1573">
+            <a href="tel:415-742-1573">
                 <ListItem
                     leftIcon={<CommunicationCall color={indigo500} />}
                     rightIcon={<CommunicationChatBubble />}
@@ -38,7 +38,7 @@ const ListExamplePhone = () => (
         </List>
         <Divider inset={true} />
         <List>
-            <a href="www.github.com">
+            <a href = "https://docs.google.com/document/d/1KQuvL_uIrv5POaL6NrNJBXOLr3zlmdPUIUq8g5d9Lv4/edit?usp=sharing">
                 <ListItem
                 leftAvatar={<Avatar icon={<ActionWork />} />}
                 rightIcon={<ActionInfo />}
