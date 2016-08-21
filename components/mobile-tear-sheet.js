@@ -5,15 +5,15 @@ class MobileTearSheet extends Component {
 
     static propTypes = {
         children: PropTypes.node,
-        height: PropTypes.number.isRequired,
+        height: PropTypes.number.isRequired
     };
 
     static defaultProps = {
-        height: 500,
+        height: 500
     };
 
     static contextTypes = {
-        muiTheme: PropTypes.object.isRequired,
+        muiTheme: PropTypes.object.isRequired
     };
 
     render() {
@@ -25,19 +25,19 @@ class MobileTearSheet extends Component {
             root: {
                 marginBottom: 24,
                 marginRight: 24,
-                width: '100%',
+                width: '100%'
             },
             container: {
                 border: 'solid 1px #d9d9d9',
                 borderBottom: 'none',
                 height: this.props.height,
-                overflow: 'hidden',
+                overflow: 'hidden'
             },
             bottomTear: {
                 display: 'block',
                 position: 'relative',
-                marginTop: -10,
-            },
+                marginTop: -10
+            }
         };
 
         return (
@@ -45,7 +45,7 @@ class MobileTearSheet extends Component {
                 <div style={prepareStyles(styles.container)}>
                     {this.props.children}
                 </div>
-                <img style={prepareStyles(styles.bottomTear)} src="./components/bottom-tear.svg" />
+                <img style={prepareStyles(styles.bottomTear)} src="./components/Images/bottom-tear.svg" />
             </div>
         );
     }

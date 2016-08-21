@@ -10,13 +10,11 @@ injectTapEventPlugin();
 const App = () => (
     <MuiThemeProvider>
         <div>
-        <AppBarExampleIconMenu />
-        <TabsExampleSimple />
+            <AppBarExampleIconMenu />
+            <TabsExampleSimple />
         </div>
     </MuiThemeProvider>
 );
-
-
 
 ReactDOM.render(
     <App />,

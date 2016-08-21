@@ -1,33 +1,25 @@
 import React from 'react';
 import {Tabs, Tab} from 'material-ui/Tabs';
-import GridListExampleSimple from './GridListExampleSimple';
-import CardExampleWithAvatar from './CardExampleWithAvatar';
-import BackEndCard from './BackEndCard'
-import DataAnalysisCard from './DataAnalysisCard'
-import ListExamplePhone from './DividerExampleForm'
-
-
-const styles = {
-    headline: {
-        fontSize: 24,
-        paddingTop: 16,
-        marginBottom: 12,
-        fontWeight: 400
-    }
-};
+import FrontEndCard from './Cards/FrontEndCard';
+import BackEndCard from './Cards/BackEndCard'
+import DataAnalysisCard from './Cards/DataAnalysisCard'
+import ContactCard from './ContactCard'
+import CarouselInstance from './Carousel'
 
 const TabsExampleSimple = () => (
     <Tabs>
         <Tab label="Projects" >
             <div>
-                <h2 style={styles.headline}>Projects</h2>
-                <GridListExampleSimple />
+                <br />
+                <br />
+                <CarouselInstance />
             </div>
         </Tab>
         <Tab label="Technical Skills" >
             <div id="technicalSkills">
                 <br />
-                <CardExampleWithAvatar  />
+                <br />
+                <FrontEndCard  />
                 <br />
                 <br />
                 <BackEndCard />
@@ -42,7 +34,9 @@ const TabsExampleSimple = () => (
         </Tab>
         <Tab label="Resume">
             <div id ="Resume">
-                <ListExamplePhone />
+                <br />
+                <br />
+                <ContactCard />
                 <br />
                 <br />
                 <br />

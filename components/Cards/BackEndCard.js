@@ -10,7 +10,7 @@ const BackEndCard = () => (
         <CardMedia
             overlay={<CardTitle title="Server-Side Technologies"  />}
         >
-            <img src="./components/Screen Shot 2016-08-18 at 2.18.25 PM.png" />
+            <img src="./components/Images/BackEndTechnologies.png" />
         </CardMedia>
         <CardTitle title="Summary of skills" />
         <CardText>

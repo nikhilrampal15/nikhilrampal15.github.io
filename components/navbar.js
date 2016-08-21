@@ -5,6 +5,7 @@ import SvgIconExampleSimple from './navbarIcons'
 
 const AppBarExampleIconMenu = () => (
     <AppBar
+        style={{backgroundColor : '#737373'}}
         title="Nick Rampal"
         iconElementRight={
       <SvgIconExampleSimple />
