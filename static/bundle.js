@@ -54686,7 +54686,7 @@
 	            { className: 'show-grid' },
 	            _react2.default.createElement(
 	                _reactBootstrap.Col,
-	                { xs: 10, md: 8, mdOffset: 2, sm: 10, smOffset: 1 },
+	                { xs: 10, xsOffset: 1, md: 8, mdOffset: 2, sm: 10, smOffset: 1 },
 	                _react2.default.createElement(
 	                    _Card.Card,
 	                    null,

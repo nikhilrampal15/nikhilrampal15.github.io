@@ -13,7 +13,7 @@ import {Card} from 'material-ui/Card';
 const ContactCard = () => (
     <Grid>
         <Row className="show-grid">
-            <Col xs={10}  md ={8} mdOffset={2} sm ={10} smOffset={1}>
+            <Col xs={10} xsOffset={1}  md ={8} mdOffset={2} sm ={10} smOffset={1}>
                 <Card>
                 <List>
                     <a href="tel:415-742-1573">
