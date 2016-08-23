@@ -30,20 +30,14 @@ const TabsExampleSimple = () => (
             </div>
         </Tab>
         <Tab label="Skills" >
-            <div id="technicalSkills">
-                <br />
-                <br />
+            <div id="FrontEndCard">
                 <FrontEndCard  />
-                <br />
-                <br />
+            </div>
+            <div id="BackEndCard">
                 <BackEndCard />
-                <br />
-                <br />
+            </div>
+            <div id="DataAnalysisCard">
                 <DataAnalysisCard />
-                <br />
-                <br />
-                <br />
-                <br />
             </div>
         </Tab>
         <Tab label="Contact">

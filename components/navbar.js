@@ -1,7 +1,6 @@
 import React from 'react';
 import AppBar from 'material-ui/AppBar';
-import SvgIconExampleSimple from './navbarIcons'
-
+import SvgIconExampleSimple from './navbarIcons';
 
 const AppBarExampleIconMenu = () => (
     <AppBar
@@ -12,6 +11,7 @@ const AppBarExampleIconMenu = () => (
       <SvgIconExampleSimple />
     }
     />
+    
 );
 
 export default AppBarExampleIconMenu;

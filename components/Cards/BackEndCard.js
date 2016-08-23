@@ -14,7 +14,9 @@ const BackEndCard = () => (
         </CardMedia>
         <CardTitle title="Summary of skills" />
         <CardText>
+            <div id="BackEndCardText">
             With servers I have experience with node.js(express) along with flask(python). I have used SQL and implemented it in postgresSQL databases.
+            </div>
         </CardText>
     </Card>
     </Col>

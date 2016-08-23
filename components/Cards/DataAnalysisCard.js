@@ -14,7 +14,9 @@ const DataAnalysisCard = () => (
                     </CardMedia>
                     <CardTitle title="Summary of skills" />
                     <CardText>
+                        <div id="DataAnalysisCardText">
                         I have used python mainly for big data analysis along with some implementation of machine learning. I have experience using numpy,pandas, jupyter notebook and matplotlib for graphing results.
+                        </div>
                     </CardText>
                 </Card>
             </Col>

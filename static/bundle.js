@@ -33348,20 +33348,18 @@
 	            { label: 'Skills' },
 	            _react2.default.createElement(
 	                'div',
-	                { id: 'technicalSkills' },
-	                _react2.default.createElement('br', null),
-	                _react2.default.createElement('br', null),
-	                _react2.default.createElement(_FrontEndCard2.default, null),
-	                _react2.default.createElement('br', null),
-	                _react2.default.createElement('br', null),
-	                _react2.default.createElement(_BackEndCard2.default, null),
-	                _react2.default.createElement('br', null),
-	                _react2.default.createElement('br', null),
-	                _react2.default.createElement(_DataAnalysisCard2.default, null),
-	                _react2.default.createElement('br', null),
-	                _react2.default.createElement('br', null),
-	                _react2.default.createElement('br', null),
-	                _react2.default.createElement('br', null)
+	                { id: 'FrontEndCard' },
+	                _react2.default.createElement(_FrontEndCard2.default, null)
+	            ),
+	            _react2.default.createElement(
+	                'div',
+	                { id: 'BackEndCard' },
+	                _react2.default.createElement(_BackEndCard2.default, null)
+	            ),
+	            _react2.default.createElement(
+	                'div',
+	                { id: 'DataAnalysisCard' },
+	                _react2.default.createElement(_DataAnalysisCard2.default, null)
 	            )
 	        ),
 	        _react2.default.createElement(
@@ -34193,7 +34191,11 @@
 	                    _react2.default.createElement(
 	                        _Card.CardText,
 	                        null,
-	                        'I am an expert in HTML5, CSS, and Javascript(ES6) and adept in creating one page apps using Angular and React/Redux. This web-page is built in react.'
+	                        _react2.default.createElement(
+	                            'div',
+	                            { id: 'FrontEndCardText' },
+	                            'I am an expert in HTML5, CSS, and Javascript(ES6) and adept in creating one page apps using Angular and React/Redux. This web-page is built in react.'
+	                        )
 	                    )
 	                )
 	            )
@@ -54555,7 +54557,11 @@
 	                    _react2.default.createElement(
 	                        _Card.CardText,
 	                        null,
-	                        'With servers I have experience with node.js(express) along with flask(python). I have used SQL and implemented it in postgresSQL databases.'
+	                        _react2.default.createElement(
+	                            'div',
+	                            { id: 'BackEndCardText' },
+	                            'With servers I have experience with node.js(express) along with flask(python). I have used SQL and implemented it in postgresSQL databases.'
+	                        )
 	                    )
 	                )
 	            )
@@ -54609,7 +54615,11 @@
 	                    _react2.default.createElement(
 	                        _Card.CardText,
 	                        null,
-	                        'I have used python mainly for big data analysis along with some implementation of machine learning. I have experience using numpy,pandas, jupyter notebook and matplotlib for graphing results.'
+	                        _react2.default.createElement(
+	                            'div',
+	                            { id: 'DataAnalysisCardText' },
+	                            'I have used python mainly for big data analysis along with some implementation of machine learning. I have experience using numpy,pandas, jupyter notebook and matplotlib for graphing results.'
+	                        )
 	                    )
 	                )
 	            )
@@ -54676,7 +54686,7 @@
 	            { className: 'show-grid' },
 	            _react2.default.createElement(
 	                _reactBootstrap.Col,
-	                { xs: 8, xsOffset: 1, md: 8, mdOffset: 2, sm: 10, smOffset: 2 },
+	                { xs: 10, md: 8, mdOffset: 2, sm: 10, smOffset: 1 },
 	                _react2.default.createElement(
 	                    _Card.Card,
 	                    null,
@@ -56546,7 +56556,7 @@
 	                _react2.default.createElement(
 	                    _reactBootstrap.Well,
 	                    null,
-	                    'My name is Nick and I am a software developer based in San Francisco. I am a huge fan of Javascript and Python. I specialize in web development and recently have been exploring data analytics. I built this website to further progress my development skills please take a look at my projects below to better understand my skill set.'
+	                    ' Hi, my name is Nick and I am a software developer based in San Francisco.I specialize in web development with javascript but have also used python for some algorithmic data analysis. I built this website to further progress my development skills please take a look at my projects to better understand my skill set.'
 	                )
 	            )
 	        )

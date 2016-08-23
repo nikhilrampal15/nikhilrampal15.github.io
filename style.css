@@ -87,6 +87,7 @@ li{
 
 #About{
     padding-top: 150px;
+    font-family: 'Lato', sans-serif;
 }
 
 #carousel{
@@ -110,3 +111,32 @@ li{
 #Project{
     padding-top:20px;
 }
+
+#Appbar{
+    font-family: 'Lato', sans-serif;
+}
+
+#FrontEndCardText{
+    font-family: 'Lato', sans-serif;
+}
+
+#FrontEndCard{
+    padding-top:50px;
+}
+
+#BackEndCardText{
+    font-family: 'Lato', sans-serif;
+}
+
+#BackEndCard{
+    padding-top:20px;
+}
+
+#DataAnalysisCardText{
+    font-family: 'Lato', sans-serif;
+}
+
+#DataAnalysisCard{
+    padding-top:20px;
+}
+
