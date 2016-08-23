@@ -81,15 +81,6 @@ li{
     margin: 0 0 100px 0;
 }
 
-#bottomNav{
-    height:60px;
-    background-color: #737373;
-    position:fixed;
-    width:100%;
-    bottom:0;
-    content: 'hello';
-}
-
 #avatar{
     padding-top: 10px;
 }
@@ -100,7 +91,6 @@ li{
 
 #carousel{
     padding-top: 50px;
-    padding-bottom: 200px;
 }
 
 #bg {
@@ -115,4 +105,8 @@ li{
 
 #Contact{
     padding-top:150px;
+}
+
+#Project{
+    padding-top:20px;
 }

@@ -33304,6 +33304,10 @@
 
 	var _AboutMePanel2 = _interopRequireDefault(_AboutMePanel);
 
+	var _ProjectsPanel = __webpack_require__(676);
+
+	var _ProjectsPanel2 = _interopRequireDefault(_ProjectsPanel);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var TabsExampleSimple = function TabsExampleSimple() {
@@ -33332,6 +33336,11 @@
 	                'div',
 	                { id: 'carousel' },
 	                _react2.default.createElement(_Carousel2.default, null)
+	            ),
+	            _react2.default.createElement(
+	                'div',
+	                { id: 'Project' },
+	                _react2.default.createElement(_ProjectsPanel2.default, null)
 	            )
 	        ),
 	        _react2.default.createElement(
@@ -33368,6 +33377,8 @@
 	};
 
 	exports.default = TabsExampleSimple;
+
+	//Job Chaser:
 
 /***/ },
 /* 383 */
@@ -56543,6 +56554,131 @@
 	};
 
 	exports.default = AboutMeBlock;
+
+/***/ },
+/* 676 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactBootstrap = __webpack_require__(401);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var ProjectPanel = function ProjectPanel() {
+	    return _react2.default.createElement(
+	        _reactBootstrap.Grid,
+	        null,
+	        _react2.default.createElement(
+	            _reactBootstrap.Row,
+	            null,
+	            _react2.default.createElement(
+	                _reactBootstrap.Col,
+	                { md: 12 },
+	                _react2.default.createElement(
+	                    _reactBootstrap.Panel,
+	                    { collapsible: true, defaultExpanded: true, header: 'Projects', style: { textAlign: 'center' } },
+	                    _react2.default.createElement(
+	                        _reactBootstrap.ListGroup,
+	                        { fill: true },
+	                        _react2.default.createElement(
+	                            _reactBootstrap.ListGroupItem,
+	                            { style: { textAlign: 'center' } },
+	                            'Job Chaser: ',
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'https://github.com/nikhilrampal15/q2project' },
+	                                'GitHub'
+	                            ),
+	                            ' ',
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'https://q2project.herokuapp.com/' },
+	                                ' Job Chaser'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            _reactBootstrap.ListGroupItem,
+	                            null,
+	                            'A full-stack application that allows users to collaborate and compare interview questions, job postings, and provide general tips to other users.'
+	                        ),
+	                        _react2.default.createElement(
+	                            _reactBootstrap.ListGroupItem,
+	                            { style: { textAlign: 'center' } },
+	                            'Technologies Used:'
+	                        ),
+	                        _react2.default.createElement(
+	                            _reactBootstrap.ListGroupItem,
+	                            null,
+	                            'Javascript, jQuery, Node.js, Bcrypt, postgreSQL, Passport.js, Express'
+	                        ),
+	                        _react2.default.createElement(
+	                            _reactBootstrap.ListGroupItem,
+	                            null,
+	                            ' Virtual Realtor: ',
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'https://github.com/nikhilrampal15/q3project' },
+	                                'GitHub'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            _reactBootstrap.ListGroupItem,
+	                            null,
+	                            ' A recommendation system built using K-Means clustering and K-nearest Neighbors  machine learning algorithms to locate affordable housing nationwide. A potential homeowner would just have to input certain criteria they are looking for and leave the rest to the virtual realtor.'
+	                        ),
+	                        _react2.default.createElement(
+	                            _reactBootstrap.ListGroupItem,
+	                            { style: { textAlign: 'center' } },
+	                            'Technologies Used:'
+	                        ),
+	                        _react2.default.createElement(
+	                            _reactBootstrap.ListGroupItem,
+	                            null,
+	                            'Python, Numpy, Pandas, Flask, Plotly, Matplotlib, Ipython'
+	                        ),
+	                        _react2.default.createElement(
+	                            _reactBootstrap.ListGroupItem,
+	                            null,
+	                            ' Lets Cook: ',
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'https://q2project.herokuapp.com/' },
+	                                ' Let\'s Cook '
+	                            ),
+	                            ' '
+	                        ),
+	                        _react2.default.createElement(
+	                            _reactBootstrap.ListGroupItem,
+	                            null,
+	                            ' Ever wonder what to cook when you come home? Let\'s Cook has you covered. Just input the ingredients you already have in your refrigerator and you will view recipes that can be used to make just about anything. There are over 300,000 recipes available. '
+	                        ),
+	                        _react2.default.createElement(
+	                            _reactBootstrap.ListGroupItem,
+	                            null,
+	                            'Technologies Used:'
+	                        ),
+	                        _react2.default.createElement(
+	                            _reactBootstrap.ListGroupItem,
+	                            null,
+	                            'Javascript, jQuery, RestFul Apis, Heroku, Mocha TDD'
+	                        )
+	                    )
+	                )
+	            )
+	        )
+	    );
+	};
+
+	exports.default = ProjectPanel;
 
 /***/ }
 /******/ ]);

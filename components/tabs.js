@@ -7,6 +7,7 @@ import ContactCard from './ContactCard'
 import CarouselInstance from './Carousel'
 import ContactAvatar from './ContactAvatar'
 import AboutMeBlock from './AboutMePanel'
+import ProjectPanel from './ProjectsPanel'
 
 const TabsExampleSimple = () => (
     <Tabs>
@@ -23,6 +24,9 @@ const TabsExampleSimple = () => (
         <Tab label="Projects" >
             <div id="carousel">
                 <CarouselInstance />
+            </div>
+            <div id="Project">
+                <ProjectPanel />
             </div>
         </Tab>
         <Tab label="Skills" >
@@ -51,3 +55,5 @@ const TabsExampleSimple = () => (
 );
 
 export default TabsExampleSimple;
+
+//Job Chaser:
