@@ -5,17 +5,27 @@ import BackEndCard from './Cards/BackEndCard'
 import DataAnalysisCard from './Cards/DataAnalysisCard'
 import ContactCard from './ContactCard'
 import CarouselInstance from './Carousel'
+import ContactAvatar from './ContactAvatar'
+import AboutMeBlock from './AboutMePanel'
 
 const TabsExampleSimple = () => (
     <Tabs>
+        <Tab label="About" >
+            <div id="avatar">
+                <ContactAvatar />
+            </div>
+            <div id="About">
+                <AboutMeBlock />
+            </div>
+            <div id="carousel">
+            </div>
+        </Tab>
         <Tab label="Projects" >
-            <div>
-                <br />
-                <br />
+            <div id="carousel">
                 <CarouselInstance />
             </div>
         </Tab>
-        <Tab label="Technical Skills" >
+        <Tab label="Skills" >
             <div id="technicalSkills">
                 <br />
                 <br />
@@ -32,15 +42,9 @@ const TabsExampleSimple = () => (
                 <br />
             </div>
         </Tab>
-        <Tab label="Resume">
-            <div id ="Resume">
-                <br />
-                <br />
+        <Tab label="Contact">
+            <div id ="Contact">
                 <ContactCard />
-                <br />
-                <br />
-                <br />
-                <br />
             </div>
         </Tab>
     </Tabs>

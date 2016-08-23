@@ -33292,9 +33292,17 @@
 
 	var _ContactCard2 = _interopRequireDefault(_ContactCard);
 
-	var _Carousel = __webpack_require__(674);
+	var _Carousel = __webpack_require__(673);
 
 	var _Carousel2 = _interopRequireDefault(_Carousel);
+
+	var _ContactAvatar = __webpack_require__(674);
+
+	var _ContactAvatar2 = _interopRequireDefault(_ContactAvatar);
+
+	var _AboutMePanel = __webpack_require__(675);
+
+	var _AboutMePanel2 = _interopRequireDefault(_AboutMePanel);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -33304,18 +33312,31 @@
 	        null,
 	        _react2.default.createElement(
 	            _Tabs.Tab,
+	            { label: 'About' },
+	            _react2.default.createElement(
+	                'div',
+	                { id: 'avatar' },
+	                _react2.default.createElement(_ContactAvatar2.default, null)
+	            ),
+	            _react2.default.createElement(
+	                'div',
+	                { id: 'About' },
+	                _react2.default.createElement(_AboutMePanel2.default, null)
+	            ),
+	            _react2.default.createElement('div', { id: 'carousel' })
+	        ),
+	        _react2.default.createElement(
+	            _Tabs.Tab,
 	            { label: 'Projects' },
 	            _react2.default.createElement(
 	                'div',
-	                null,
-	                _react2.default.createElement('br', null),
-	                _react2.default.createElement('br', null),
+	                { id: 'carousel' },
 	                _react2.default.createElement(_Carousel2.default, null)
 	            )
 	        ),
 	        _react2.default.createElement(
 	            _Tabs.Tab,
-	            { label: 'Technical Skills' },
+	            { label: 'Skills' },
 	            _react2.default.createElement(
 	                'div',
 	                { id: 'technicalSkills' },
@@ -33336,17 +33357,11 @@
 	        ),
 	        _react2.default.createElement(
 	            _Tabs.Tab,
-	            { label: 'Resume' },
+	            { label: 'Contact' },
 	            _react2.default.createElement(
 	                'div',
-	                { id: 'Resume' },
-	                _react2.default.createElement('br', null),
-	                _react2.default.createElement('br', null),
-	                _react2.default.createElement(_ContactCard2.default, null),
-	                _react2.default.createElement('br', null),
-	                _react2.default.createElement('br', null),
-	                _react2.default.createElement('br', null),
-	                _react2.default.createElement('br', null)
+	                { id: 'Contact' },
+	                _react2.default.createElement(_ContactCard2.default, null)
 	            )
 	        )
 	    );
@@ -54607,43 +54622,37 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _mobileTearSheet = __webpack_require__(657);
+	var _List = __webpack_require__(657);
 
-	var _mobileTearSheet2 = _interopRequireDefault(_mobileTearSheet);
-
-	var _List = __webpack_require__(658);
-
-	var _Divider = __webpack_require__(667);
+	var _Divider = __webpack_require__(666);
 
 	var _Divider2 = _interopRequireDefault(_Divider);
 
-	var _call = __webpack_require__(669);
+	var _call = __webpack_require__(668);
 
 	var _call2 = _interopRequireDefault(_call);
 
-	var _chatBubble = __webpack_require__(670);
+	var _chatBubble = __webpack_require__(669);
 
 	var _chatBubble2 = _interopRequireDefault(_chatBubble);
 
 	var _colors = __webpack_require__(292);
 
-	var _email = __webpack_require__(671);
+	var _email = __webpack_require__(670);
 
 	var _email2 = _interopRequireDefault(_email);
 
-	var _work = __webpack_require__(672);
+	var _work = __webpack_require__(671);
 
 	var _work2 = _interopRequireDefault(_work);
 
-	var _info = __webpack_require__(673);
+	var _info = __webpack_require__(672);
 
 	var _info2 = _interopRequireDefault(_info);
 
-	var _Avatar = __webpack_require__(395);
-
-	var _Avatar2 = _interopRequireDefault(_Avatar);
-
 	var _reactBootstrap = __webpack_require__(401);
+
+	var _Card = __webpack_require__(389);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -54658,7 +54667,7 @@
 	                _reactBootstrap.Col,
 	                { xs: 8, xsOffset: 1, md: 8, mdOffset: 2, sm: 10, smOffset: 2 },
 	                _react2.default.createElement(
-	                    _mobileTearSheet2.default,
+	                    _Card.Card,
 	                    null,
 	                    _react2.default.createElement(
 	                        _List.List,
@@ -54719,105 +54728,19 @@
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var MobileTearSheet = function (_Component) {
-	    _inherits(MobileTearSheet, _Component);
-
-	    function MobileTearSheet() {
-	        _classCallCheck(this, MobileTearSheet);
-
-	        return _possibleConstructorReturn(this, Object.getPrototypeOf(MobileTearSheet).apply(this, arguments));
-	    }
-
-	    _createClass(MobileTearSheet, [{
-	        key: 'render',
-	        value: function render() {
-	            var prepareStyles = this.context.muiTheme.prepareStyles;
-
-
-	            var styles = {
-	                root: {
-	                    marginBottom: 24,
-	                    marginRight: 24,
-	                    width: '100%'
-	                },
-	                container: {
-	                    border: 'solid 1px #d9d9d9',
-	                    borderBottom: 'none',
-	                    height: this.props.height,
-	                    overflow: 'hidden'
-	                },
-	                bottomTear: {
-	                    display: 'block',
-	                    position: 'relative',
-	                    marginTop: -10
-	                }
-	            };
-
-	            return _react2.default.createElement(
-	                'div',
-	                { style: prepareStyles(styles.root) },
-	                _react2.default.createElement(
-	                    'div',
-	                    { style: prepareStyles(styles.container) },
-	                    this.props.children
-	                ),
-	                _react2.default.createElement('img', { style: prepareStyles(styles.bottomTear), src: './components/Images/bottom-tear.svg' })
-	            );
-	        }
-	    }]);
-
-	    return MobileTearSheet;
-	}(_react.Component);
-
-	MobileTearSheet.propTypes = {
-	    children: _react.PropTypes.node,
-	    height: _react.PropTypes.number.isRequired
-	};
-	MobileTearSheet.defaultProps = {
-	    height: 500
-	};
-	MobileTearSheet.contextTypes = {
-	    muiTheme: _react.PropTypes.object.isRequired
-	};
-	exports.default = MobileTearSheet;
-
-/***/ },
-/* 658 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
 	exports.default = exports.MakeSelectable = exports.ListItem = exports.List = undefined;
 
-	var _List2 = __webpack_require__(659);
+	var _List2 = __webpack_require__(658);
 
 	var _List3 = _interopRequireDefault(_List2);
 
-	var _ListItem2 = __webpack_require__(662);
+	var _ListItem2 = __webpack_require__(661);
 
 	var _ListItem3 = _interopRequireDefault(_ListItem2);
 
-	var _MakeSelectable2 = __webpack_require__(666);
+	var _MakeSelectable2 = __webpack_require__(665);
 
 	var _MakeSelectable3 = _interopRequireDefault(_MakeSelectable2);
 
@@ -54831,7 +54754,7 @@
 	exports.default = _List3.default;
 
 /***/ },
-/* 659 */
+/* 658 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -54874,7 +54797,7 @@
 
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 
-	var _Subheader = __webpack_require__(660);
+	var _Subheader = __webpack_require__(659);
 
 	var _Subheader2 = _interopRequireDefault(_Subheader);
 
@@ -55003,7 +54926,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
-/* 660 */
+/* 659 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -55013,7 +54936,7 @@
 	});
 	exports.default = undefined;
 
-	var _Subheader = __webpack_require__(661);
+	var _Subheader = __webpack_require__(660);
 
 	var _Subheader2 = _interopRequireDefault(_Subheader);
 
@@ -55024,7 +54947,7 @@
 	exports.default = _Subheader2.default;
 
 /***/ },
-/* 661 */
+/* 660 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -55118,7 +55041,7 @@
 	exports.default = Subheader;
 
 /***/ },
-/* 662 */
+/* 661 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -55179,15 +55102,15 @@
 
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 
-	var _expandLess = __webpack_require__(663);
+	var _expandLess = __webpack_require__(662);
 
 	var _expandLess2 = _interopRequireDefault(_expandLess);
 
-	var _expandMore = __webpack_require__(664);
+	var _expandMore = __webpack_require__(663);
 
 	var _expandMore2 = _interopRequireDefault(_expandMore);
 
-	var _NestedList = __webpack_require__(665);
+	var _NestedList = __webpack_require__(664);
 
 	var _NestedList2 = _interopRequireDefault(_NestedList);
 
@@ -55794,7 +55717,7 @@
 	exports.default = ListItem;
 
 /***/ },
-/* 663 */
+/* 662 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -55829,7 +55752,7 @@
 	exports.default = NavigationExpandLess;
 
 /***/ },
-/* 664 */
+/* 663 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -55864,7 +55787,7 @@
 	exports.default = NavigationExpandMore;
 
 /***/ },
-/* 665 */
+/* 664 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -55893,7 +55816,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _List = __webpack_require__(659);
+	var _List = __webpack_require__(658);
 
 	var _List2 = _interopRequireDefault(_List);
 
@@ -55969,7 +55892,7 @@
 	exports.default = NestedList;
 
 /***/ },
-/* 666 */
+/* 665 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -56173,7 +56096,7 @@
 	exports.default = MakeSelectable;
 
 /***/ },
-/* 667 */
+/* 666 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -56183,7 +56106,7 @@
 	});
 	exports.default = undefined;
 
-	var _Divider = __webpack_require__(668);
+	var _Divider = __webpack_require__(667);
 
 	var _Divider2 = _interopRequireDefault(_Divider);
 
@@ -56194,7 +56117,7 @@
 	exports.default = _Divider2.default;
 
 /***/ },
-/* 668 */
+/* 667 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -56285,7 +56208,7 @@
 	exports.default = Divider;
 
 /***/ },
-/* 669 */
+/* 668 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -56320,7 +56243,7 @@
 	exports.default = CommunicationCall;
 
 /***/ },
-/* 670 */
+/* 669 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -56355,7 +56278,7 @@
 	exports.default = CommunicationChatBubble;
 
 /***/ },
-/* 671 */
+/* 670 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -56390,7 +56313,7 @@
 	exports.default = CommunicationEmail;
 
 /***/ },
-/* 672 */
+/* 671 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -56425,7 +56348,7 @@
 	exports.default = ActionWork;
 
 /***/ },
-/* 673 */
+/* 672 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -56460,7 +56383,7 @@
 	exports.default = ActionInfo;
 
 /***/ },
-/* 674 */
+/* 673 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -56489,7 +56412,7 @@
 	                { md: 8, mdOffset: 2 },
 	                _react2.default.createElement(
 	                    _reactBootstrap.Carousel,
-	                    { indicators: false },
+	                    { indicators: false, controls: false },
 	                    _react2.default.createElement(
 	                        _reactBootstrap.Carousel.Item,
 	                        null,
@@ -56523,6 +56446,103 @@
 	};
 
 	exports.default = CarouselInstance;
+
+/***/ },
+/* 674 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _Avatar = __webpack_require__(395);
+
+	var _Avatar2 = _interopRequireDefault(_Avatar);
+
+	var _List = __webpack_require__(658);
+
+	var _List2 = _interopRequireDefault(_List);
+
+	var _ListItem = __webpack_require__(661);
+
+	var _ListItem2 = _interopRequireDefault(_ListItem);
+
+	var _reactBootstrap = __webpack_require__(401);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var ContactAvatar = function ContactAvatar() {
+	    return _react2.default.createElement(
+	        _reactBootstrap.Grid,
+	        null,
+	        _react2.default.createElement(
+	            _reactBootstrap.Row,
+	            null,
+	            _react2.default.createElement(
+	                _reactBootstrap.Col,
+	                null,
+	                _react2.default.createElement(
+	                    _List2.default,
+	                    null,
+	                    _react2.default.createElement(_ListItem2.default, {
+	                        disabled: true,
+	                        leftAvatar: _react2.default.createElement(_Avatar2.default, { src: './components/Images/ProfilePic.jpg',
+	                            size: 175
+	                        })
+	                    })
+	                )
+	            )
+	        )
+	    );
+	};
+
+	exports.default = ContactAvatar;
+
+/***/ },
+/* 675 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactBootstrap = __webpack_require__(401);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var AboutMeBlock = function AboutMeBlock() {
+	    return _react2.default.createElement(
+	        _reactBootstrap.Grid,
+	        null,
+	        _react2.default.createElement(
+	            _reactBootstrap.Row,
+	            null,
+	            _react2.default.createElement(
+	                _reactBootstrap.Col,
+	                { md: 6 },
+	                _react2.default.createElement(
+	                    _reactBootstrap.Well,
+	                    null,
+	                    'My name is Nick and I am a software developer based in San Francisco. I am a huge fan of Javascript and Python. I specialize in web development and recently have been exploring data analytics. I built this website to further progress my development skills please take a look at my projects below to better understand my skill set.'
+	                )
+	            )
+	        )
+	    );
+	};
+
+	exports.default = AboutMeBlock;
 
 /***/ }
 /******/ ]);

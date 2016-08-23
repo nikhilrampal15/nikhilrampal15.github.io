@@ -90,3 +90,29 @@ li{
     content: 'hello';
 }
 
+#avatar{
+    padding-top: 10px;
+}
+
+#About{
+    padding-top: 150px;
+}
+
+#carousel{
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+
+#bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#Contact{
+    padding-top:150px;
+}
