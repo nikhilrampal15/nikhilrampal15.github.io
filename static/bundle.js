@@ -56661,7 +56661,7 @@
 	                            ' Lets Cook: ',
 	                            _react2.default.createElement(
 	                                'a',
-	                                { href: 'https://q2project.herokuapp.com/' },
+	                                { href: 'https://q1project.herokuapp.com/' },
 	                                ' Let\'s Cook '
 	                            ),
 	                            ' '
