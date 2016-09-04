@@ -33,7 +33,7 @@ const ProjectPanel = () => (
                             Python, Numpy, Pandas, Flask, Plotly, Matplotlib, Ipython
                         </ListGroupItem>
 
-                        <ListGroupItem> Lets Cook: <a href ="https://q2project.herokuapp.com/"> Let's Cook </a> </ListGroupItem>
+                        <ListGroupItem> Lets Cook: <a href ="https://q1project.herokuapp.com/"> Let's Cook </a> </ListGroupItem>
 
                         <ListGroupItem> Ever wonder what to cook when you come home? Let's Cook has you covered. Just input the ingredients you already have in your refrigerator and you will view recipes that can be used to make just about anything. There are over 300,000 recipes available. </ListGroupItem>
 
