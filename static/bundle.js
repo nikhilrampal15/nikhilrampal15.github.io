@@ -56433,7 +56433,7 @@
 	                { md: 8, mdOffset: 2 },
 	                _react2.default.createElement(
 	                    _reactBootstrap.Carousel,
-	                    { indicators: false, controls: false },
+	                    { indicators: false, interval: 1000 },
 	                    _react2.default.createElement(
 	                        _reactBootstrap.Carousel.Item,
 	                        null,

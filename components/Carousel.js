@@ -6,7 +6,7 @@ const CarouselInstance = () => (
     <Grid>
         <Row>
             <Col md={8} mdOffset ={2}>
-                <Carousel indicators ={false} controls = {false}>
+                <Carousel indicators ={false} interval ={1000}>
                     <Carousel.Item>
                         <a href="https://q2project.herokuapp.com/"><img width={900} height={500} src="./components/JobChaser.png"/></a>
                         <Carousel.Caption id="JobChaser">
