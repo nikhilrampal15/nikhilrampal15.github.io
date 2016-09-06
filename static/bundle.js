@@ -56449,7 +56449,7 @@
 	                        null,
 	                        _react2.default.createElement(
 	                            'a',
-	                            { href: 'http://q1project.herokuapp.com/' },
+	                            { href: 'https://q1project.herokuapp.com/' },
 	                            _react2.default.createElement('img', { width: 900, height: 500, src: './components/LetsCook.png' })
 	                        ),
 	                        _react2.default.createElement(_reactBootstrap.Carousel.Caption, { id: 'LetsCook' })
@@ -56457,7 +56457,11 @@
 	                    _react2.default.createElement(
 	                        _reactBootstrap.Carousel.Item,
 	                        null,
-	                        _react2.default.createElement('img', { width: 900, height: 500, src: './components/VirtualRealtor.png' }),
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: 'https://github.com/nikhilrampal15/q3project' },
+	                            _react2.default.createElement('img', { width: 900, height: 500, src: './components/VirtualRealtor.png' })
+	                        ),
 	                        _react2.default.createElement(_reactBootstrap.Carousel.Caption, { id: 'VirtualRealtor' })
 	                    )
 	                )

@@ -14,12 +14,12 @@ const CarouselInstance = () => (
                     </Carousel.Item>
 
                     <Carousel.Item>
-                        <a href="http://q1project.herokuapp.com/"><img width={900} height={500}  src="./components/LetsCook.png"/></a>
+                        <a href="https://q1project.herokuapp.com/"><img width={900} height={500}  src="./components/LetsCook.png"/></a>
                         <Carousel.Caption id="LetsCook">
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img width={900} height={500}  src="./components/VirtualRealtor.png"/>
+                        <a href="https://github.com/nikhilrampal15/q3project"><img width={900} height={500}  src="./components/VirtualRealtor.png"/></a>
                         <Carousel.Caption id="VirtualRealtor">
                         </Carousel.Caption>
                     </Carousel.Item>
