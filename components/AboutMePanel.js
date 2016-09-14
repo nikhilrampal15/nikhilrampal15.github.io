@@ -6,7 +6,7 @@ const AboutMeBlock = () => (
     <Grid>
         <Row>
             <Col md={6}>
-                <Well> Hi, my name is Nick and I am a software developer based in San Francisco.I specialize in web development with javascript but have also used python for some algorithmic data analysis. I built this website to further progress my development skills please take a look at my projects to better understand my skill set.</Well>
+                <Well> Hi, my name is Nick and I am a software developer from San Francisco. I specialize in web development using javascript and python. </Well>
             </Col>
         </Row>
     </Grid>

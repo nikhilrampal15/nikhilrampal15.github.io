@@ -15,7 +15,7 @@ const BackEndCard = () => (
         <CardTitle title="Summary of skills" />
         <CardText>
             <div id="BackEndCardText">
-            With servers I have experience with node.js(express) along with flask(python). I have used SQL and implemented it in postgresSQL databases.
+           The back end technologies I currently use are node.js(express) and flask(python), my database tool of choice is PostgresQL. I have experience with encryption using bycrpt and have used oAuth as well. 
             </div>
         </CardText>
     </Card>

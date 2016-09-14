@@ -24,7 +24,7 @@ const ProjectPanel = () => (
 
                         <ListGroupItem> Virtual Realtor: <a href="https://github.com/nikhilrampal15/q3project">GitHub</a></ListGroupItem>
 
-                        <ListGroupItem> A recommendation system built using K-Means clustering and K-nearest Neighbors  machine learning algorithms to locate affordable housing nationwide. A potential homeowner would just have to input certain criteria they are looking for and leave the rest to the virtual realtor.
+                        <ListGroupItem> A recommendation system built using K-Means clustering and K-nearest Neighbors machine learning algorithms to locate affordable housing nationwide. A potential homeowner would just have to input certain criteria they are looking for and leave the rest to the virtual realtor.
                         </ListGroupItem>
                         <ListGroupItem style={{textAlign:'center'}}>
                             Technologies Used:

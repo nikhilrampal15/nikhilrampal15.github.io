@@ -54560,7 +54560,7 @@
 	                        _react2.default.createElement(
 	                            'div',
 	                            { id: 'BackEndCardText' },
-	                            'With servers I have experience with node.js(express) along with flask(python). I have used SQL and implemented it in postgresSQL databases.'
+	                            'The back end technologies I currently use are node.js(express) and flask(python), my database tool of choice is PostgresQL. I have experience with encryption using bycrpt and have used oAuth as well.'
 	                        )
 	                    )
 	                )
@@ -56560,7 +56560,7 @@
 	                _react2.default.createElement(
 	                    _reactBootstrap.Well,
 	                    null,
-	                    ' Hi, my name is Nick and I am a software developer based in San Francisco.I specialize in web development with javascript but have also used python for some algorithmic data analysis. I built this website to further progress my development skills please take a look at my projects to better understand my skill set.'
+	                    ' Hi, my name is Nick and I am a software developer from San Francisco. I specialize in web development using javascript and python. '
 	                )
 	            )
 	        )
@@ -56647,7 +56647,7 @@
 	                        _react2.default.createElement(
 	                            _reactBootstrap.ListGroupItem,
 	                            null,
-	                            ' A recommendation system built using K-Means clustering and K-nearest Neighbors  machine learning algorithms to locate affordable housing nationwide. A potential homeowner would just have to input certain criteria they are looking for and leave the rest to the virtual realtor.'
+	                            ' A recommendation system built using K-Means clustering and K-nearest Neighbors machine learning algorithms to locate affordable housing nationwide. A potential homeowner would just have to input certain criteria they are looking for and leave the rest to the virtual realtor.'
 	                        ),
 	                        _react2.default.createElement(
 	                            _reactBootstrap.ListGroupItem,
